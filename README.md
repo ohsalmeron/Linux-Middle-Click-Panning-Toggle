@@ -29,7 +29,9 @@ chmod +x toggle.sh
 ```
 Toggle Middle-Click Panning:
 
-### Run the script with the following command to enable middle-click panning:
+## Run the script
+
+### Use with the following command to enable middle-click panning:
 
 ```bash
 ./toggle.sh on
@@ -55,7 +57,9 @@ xinput set-prop "YourDeviceName" "libinput Scrolling Speed" -1
 
 Experiment with different values (positive or negative) until you find a scrolling speed that suits your preference.
 
-Confirmation:
+You can also modify the "libinput Scrolling Speed" in the script if you prefer
+
+## Confirmation:
 
 The script will confirm that middle-click panning has been enabled or disabled for your mouse device.
 
