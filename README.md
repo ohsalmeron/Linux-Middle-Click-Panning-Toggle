@@ -14,47 +14,45 @@ This script allows you to toggle middle-click panning for your mouse in Linux us
 
 2. **Find Your Mouse Device:**
 
-   Run the following command to list your input devices and find the name of your mouse device:
-
-   ```bash
-   xinput list
 Look for a device with "Mouse" in its name or a similar identifier. Note down the name of your mouse device.
 
-Edit the Script:
+## Edit the Script:
 
 Open the toggle.sh script in a text editor and replace "YourDeviceName" with the exact name of your mouse device, as found in step 2.
 
-Make the Script Executable:
+### Make the Script Executable:
 
 Make the script executable with the following command:
 
-bash
-Copy code
+```bash
 chmod +x toggle.sh
+```
 Toggle Middle-Click Panning:
 
-Run the script with the following command to enable middle-click panning:
+### Run the script with the following command to enable middle-click panning:
 
-bash
-Copy code
+```bash
 ./toggle.sh on
-To disable middle-click panning, use:
+```
+### To disable middle-click panning, use:
 
-bash
-Copy code
+```bash
 ./toggle.sh off
-Adjust Middle-Click Panning Speed (Optional):
+```
+### Adjust Middle-Click Panning Speed (Optional):
 
 To adjust the speed of middle-click panning, you can use the xinput command with the libinput Scrolling Speed property. For example, to increase the speed:
 
-bash
-Copy code
+```bash
 xinput set-prop "YourDeviceName" "libinput Scrolling Speed" 1
+```
+
 To decrease the speed:
 
-bash
-Copy code
+```bash
 xinput set-prop "YourDeviceName" "libinput Scrolling Speed" -1
+```
+
 Experiment with different values (positive or negative) until you find a scrolling speed that suits your preference.
 
 Confirmation:
@@ -65,4 +63,3 @@ That's it! You can now toggle middle-click panning and adjust its speed on your 
 
 Note
 If you encounter any issues with device detection or functionality, please ensure that your mouse and system configuration are compatible with the xinput commands used in the script.
-Happy panning!
